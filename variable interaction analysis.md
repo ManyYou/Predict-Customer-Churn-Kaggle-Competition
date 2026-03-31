@@ -1,0 +1,14 @@
+1. gender and SeniorCitizen: no variation in churn rate
+2. Partner and Dependents: Churn rates for those with no Dependents are high for either those with Partner (0.21) or no Partner (0.33). However, since those with no Dependents and no Partner have significantly higher churn rate, this suggests that single subscribers are much more likely to churn since they do not need to share the subscription with others. For those with dependents, the churn rate for those with no partner is significantly higher at 0.16 than those with Partner and Dependents at 0.07.  
+3. PhoneService and MultipleLines: The information contained within PhoneService is already covered in MutlipleLines who provides a richer information for those with PhoneService and Multiple PhoneService already. The churn rate for those with no phone service and one phone service are similar. Only those with MultipleLines have significantly have higher churn rate which indicate that one may choose to churn out of cost concern.
+4. OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport: Consistently, if there none of this variable is present, the churn rate is very high at close to 0.5, but when there is at least one or more present, the churn rate is significantly reduced. This suggests that the more services are attached to a customer, the more loyal they become. 
+5. SeniorCitizen and PaperlessBilling: PaperlessBilling significantly leads to elevated churn rate of up to at least 0.28 for either SeniorCitizen or non-SeniorCitizen compared to non-SeniorCitizen and no PaperlessBilling whose churn rate is at 0.07. For both SeniorCitizen and PaperlessBilling, the churn rate is raised up to 0.53, but this is close to the overall SeniorCitizen churn rate of around 0.5. Explanation could be that customers with PaperlessBilling are more tech literate, and thus more knowledgeable of alternative services, leading to higher churn rate. 
+6. PaymentMethod and PaperlessBilling: the overall churn rate of Electronic check PaymentMethod is around 0.5, but those with PaperlessBilling have a churn rate of 0.52 and those without PaperlessBilling have a churn rate of just 0.32. 
+7. SeniorCitizen and PaymentMethod and PaperlessBilling: those with SeniorCitizen, Electronic check PaymentMethod, and PaperlessBilling have elevated churn rate of around 0.63 which is significantly higher than just the standalone churn rate for SeniorCitizen or Electronic check PaymentMethod. 
+6. StreamingMovies and StreamingTV: Very high Cramers' V association at 0.82 which suggests redundancy. 
+
+
+Strong Candidates for Interaction Terms:
+1. Partner and Dependents: keep both and add interaction terms
+2. Security Interactions: keep all and add interaction terms
+3. PaperlessBilling and SeniorCitizen and PaymentMethod: keep all and add interaction term 
