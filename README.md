@@ -1,4 +1,6 @@
-# Predict-Customer-Churn-Kaggle-Competition
+# 1. Predict-Customer-Churn-Kaggle-Competition
 This repo is for my participation in a Kaggle Competition to predict customer churn rate as part of my machine learning training. 
 
 Kaggle Competition Link: https://www.kaggle.com/competitions/playground-series-s6e3/overview
+
+# 2. Development Workflow
